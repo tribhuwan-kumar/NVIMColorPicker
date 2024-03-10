@@ -13,7 +13,7 @@ def close_window(event):
     root.destroy()
 
 
-root.title("VIMColorPicker")
+root.title("NVIMColorPicker")
 root.bind('<Escape>', close_window)
 root.bind('<Return>', close_window)
 

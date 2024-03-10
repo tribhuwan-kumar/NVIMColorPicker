@@ -79,9 +79,8 @@ class VIMColorPicker(customtkinter.CTkFrame):
             self.label.pack(expand=True, fill="both", padx=15, pady=(0,15))
 
         self.canvas.pack()
-                
-        # mine
         self.bind_keys()
+               
 
     def get(self):
         self._color = self.label._fg_color
@@ -123,11 +122,6 @@ class VIMColorPicker(customtkinter.CTkFrame):
         elif event.keysym=="l":
             self.target_x += step_size
         
-        # self.target_x = max(min(self.target_x, self.image_dimension), 0)
-        # self.target_y = max(min(self.target_y, self.image_dimension), 0)
-
-        # self.target_x = self.constrain_to_circle(self.target_x, self.image_dimension/2)
-        # self.target_y = self.constrain_to_circle(self.target_x, self.image_dimension/2)
         self.target_x, self.target_y = self.constrain_to_circle(self.target_x, self.target_y, self.image_dimension / 2)
 
         self.canvas.delete("target")
@@ -175,7 +169,6 @@ class VIMColorPicker(customtkinter.CTkFrame):
             target_y = int(max(0, min(self.target_y, self.image_dimension -1)))
             
             self.rgb_color = self.img1.getpixel((target_x, target_y))
-            # self.rgb_color = self.img1.getpixel((self.target_x, self.target_y))
             
             r = self.rgb_color[0]
             g = self.rgb_color[1]
@@ -222,7 +215,6 @@ class VIMColorPicker(customtkinter.CTkFrame):
         return projection_x, projection_y
     
     def set_initial_color(self, initial_color):
-        # set_initial_color is in beta stage, cannot seek all colors accurately
         
         if initial_color and initial_color.startswith("#"):
             try:
