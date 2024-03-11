@@ -142,15 +142,15 @@ class VIMColorPicker(customtkinter.CTkFrame):
         return x, y
     
     def on_key_O(self, event):
-        opacity = max(0, self.brightness_slider_value.get() - 3)
-        self.brightness_slider_value.set(opacity)
-        self.slider.set(opacity)
+        saturation = max(0, self.brightness_slider_value.get() - 3)
+        self.brightness_slider_value.set(saturation)
+        self.slider.set(saturation)
         self.update_colors()
 
     def on_key_o(self, event):
-        opacity = min(255, self.brightness_slider_value.get() + 3)
-        self.brightness_slider_value.set(opacity)
-        self.slider.set(opacity)
+        saturation = min(255, self.brightness_slider_value.get() + 3)
+        self.brightness_slider_value.set(saturation)
+        self.slider.set(saturation)
         self.update_colors()
 
     def bind_keys(self):

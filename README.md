@@ -1,5 +1,5 @@
 # NVIMColorPicker
-Nvim plugin for picking colors from colorscheme
+Nvim plugin for picking colors from colorschemes
 
 ## Example:
 ![image](https://github.com/tribhuwan-kumar/NVIMColorPicker/assets/118052427/9a026686-d06b-43a6-a372-b21dbf544b21)
@@ -12,16 +12,24 @@ Nvim plugin for picking colors from colorscheme
 
 ## Installation:
 Use your favorite plugin manager to install this plugin.
-```bash
-# vim-plug
+```vim
+" vim-plug
 Plug 'tribhuwan-kumar/NVIMColorPicker'
 ```
 
+## Config:
+```vim
+let g:NVIMColorPicker#InsertAfter#TheCursor = 1 " for inserting hex code after the cursor
+let g:NVIMColorPicker#InsertBefore#TheCursor = 1 " for inserting hex code before the cursor
+```
+`set variables 0 for disabling the feature, default behavior is insert after the cursor`
+
 ## Usage:
-- `:ColorPicker` - Open color picker window
-- `Ctrl` & `Esc` - Close and accept the selected color
-- `h,j,k,l` - Move in the color wheel
-- `o` & `O` - For decreasing and increasing the color opacity
+- `:ColorPicker` - Open color picker popup
+- `h,j,k,l` - Move in the color scheme
+- `o` & `O` - For decreasing and increasing the color brightness
+- `Enter` - Accept the selected color
+- `Esc` - Close the color picker popup
 
 
 #### Under MIT License, Feel free to contribute.
