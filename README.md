@@ -1,8 +1,9 @@
 # NVIMColorPicker
 Nvim plugin for picking colors from colorschemes
 
-## Example:
-![image](https://github.com/tribhuwan-kumar/NVIMColorPicker/assets/118052427/9a026686-d06b-43a6-a372-b21dbf544b21)
+## Demo:
+![image](https://github.com/tribhuwan-kumar/NVIMColorPicker/assets/118052427/cd087696-1544-4e38-b353-6e29368f8702)
+
 
 ## Keyfeatures:
 - Fully mouse independent (NO NEED OF MOUSE)
