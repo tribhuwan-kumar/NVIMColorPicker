@@ -29,4 +29,4 @@ function! s:open_color_picker()
   call setline(lnum, hex_color)
 endfunction
 
-command! ColorPicker call s:open_color_picker()
+command! -range ColorPicker call s:open_color_picker()
