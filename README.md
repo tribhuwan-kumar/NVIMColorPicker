@@ -20,8 +20,7 @@ Plug 'tribhuwan-kumar/NVIMColorPicker'
 
 ## Config:
 ```vim
-let g:NVIMColorPicker#InsertAfter#TheCursor = 1 " for inserting hex code after the cursor
-let g:NVIMColorPicker#InsertBefore#TheCursor = 1 " for inserting hex code before the cursor
+let g:NVIMColorPicker#InsertBefore#TheCursor = 1 " for inserting hex code before the cursor, I recommend to use this
 ```
 `set variables 0 for disabling the feature, default behavior is insert after the cursor`
 
@@ -33,4 +32,4 @@ let g:NVIMColorPicker#InsertBefore#TheCursor = 1 " for inserting hex code before
 - `Esc` - Close the color picker popup
 
 
-#### Under MIT License, Feel free to contribute.
+#### Under MIT License.
