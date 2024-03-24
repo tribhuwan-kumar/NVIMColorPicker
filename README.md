@@ -2,7 +2,7 @@
 Nvim plugin for picking colors from colorschemes
 
 ## Demo:
-![image](https://github.com/tribhuwan-kumar/NVIMColorPicker/assets/118052427/cd087696-1544-4e38-b353-6e29368f8702)
+<img src="https://github.com/tribhuwan-kumar/NVIMColorPicker/assets/118052427/cd087696-1544-4e38-b353-6e29368f8702" width="400" height="auto" align="left" /> 
 
 
 ## Keyfeatures:
