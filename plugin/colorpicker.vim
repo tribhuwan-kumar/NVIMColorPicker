@@ -7,6 +7,7 @@ function! s:open_color_picker() abort
         return
     endif
 
+    let color_picker_path = substitute(color_picker_path, '\n\|\r$', '', '')
     let color = system('python3 ' . shellescape(color_picker_path))
     let color = substitute(color, '\n\+$', '', '')
     let color = substitute(color, '^\\n\+', '', '')

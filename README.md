@@ -19,6 +19,10 @@ Plug 'tribhuwan-kumar/NVIMColorPicker'
 ```
 
 ## Config:
+```bash
+cd "$(dirname "$(find ~/.local/share/nvim -type f -name color_picker.py | head -n 1)")" && pip install -r requirements.txt
+```
+
 ```vim
 let g:NVIMColorPicker#InsertBefore#TheCursor = 1 " for inserting hex code before the cursor, I recommend to use this
 ```
